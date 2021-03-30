@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Montserrat;
+}
+
+.navbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+  font-family: Montserrat;
+}
+
+.logo {
+  font-family: Source Sans PRO;
+  font-size: 34px;
+}
+
+.nav-list {
+  list-style-type: none;
+}
+
+.nav-list .nav-item {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #da3e1a;
+}
+
+.container-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto auto auto 300px 60px;
+}
+
+.image-main {
+  grid-column: 1 / 13;
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  font-size: 10px;
+  grid-row-start: 2;
+  grid-column: 1 / 13;
+  padding: 4px;
+  margin-top: 8px;
+}
+
+.content {
+  font-size: 1em;
+  grid-row-start: 3;
+  grid-column: 1 / 13;
+  padding: 4px;
+  margin-top: 8px;
+}
+
+.youtube {
+  margin: 30px 0px 10px 0px;
+}
+
+.panel-bike {
+  font-size: 1em;
+  grid-row-start: 5;
+  grid-column: 1 / 13;
+  padding: 4px;
+  margin: 30px 0px 0px 0px;
+  background-color: black;
+  color: white;
+}
+
+.image-panel {
+  grid-column: 1 / 13;
+  width: 100%;
+  height: auto;
+  margin-top: 0px;
+}
+
+.footer {
+  background-color: #da3e1a;
+  display: flex;
+  height: 60px;
+  padding: 10px;
+}
+
+/*HIER CONTACT FORM CSS*/
+
+.container {
+  display: grid;
+  grid-row-start: 6;
+  grid-column: 1 / 12;
+  padding: 1em;
+  max-width: 300px;
+}
+
+.form1 {
+  width: 85%;
+  max-width: 600px;
+  background: #da3e1a;
+  position: absolute;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 600px) {
+  .container-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 300px auto 600px 130px 400px 100px;
+  }
+
+  .header {
+    display: block;
+    grid-row-start: 2;
+    grid-column: 2 / 6;
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+  .content {
+    display: block;
+    grid-row-start: 3;
+    grid-column: 2 / 6;
+  }
+
+  .youtube {
+    grid-row-start: 5;
+    grid-column-start: 6;
+    width: 100%;
+    justify-content: center;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  .panel-bike {
+    font-size: 1em;
+    grid-row-start: 7;
+    grid-column: 6 / 13;
+    padding: 20px;
+    margin: 10px 0px 0px 0px;
+    background-color: black;
+    color: white;
+  }
+
+  .image-panel {
+    grid-row-start: 7;
+    grid-column: 1/ 6;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .container {
+    display: grid;
+    grid-row-start: 5;
+  }
+}
